@@ -13,5 +13,6 @@ func main() {
 	mux.HandleFunc("/", home)
 	log.Print("Starting server on :4001")
 	err := http.ListenAndServe(":4001", mux)
+	// test
 	log.Fatal(err)
 }
